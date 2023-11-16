@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\poster.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RadioBrowser" Version="0.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\poster.jpeg" />
+  </ItemGroup>
+
+</Project>

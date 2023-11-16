@@ -1,0 +1,33 @@
+﻿<Window x:Class="MountainRadio.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MountainRadio"
+        xmlns:UserControls="clr-namespace:MountainRadio.View"
+        mc:Ignorable="d"
+        MinWidth="200"
+        ResizeMode="NoResize" 
+        Title="MainWindow" Height="450" Width="800">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <!-- Main app menu -->
+            <ColumnDefinition Width="200"/>
+
+            <!-- Station info pane -->
+            <ColumnDefinition Width="75*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Main app menu -->
+        <UserControls:MenuBar/>
+
+        <!-- Content Panel -->
+        <Grid Grid.Column="1" Background="#4f6a7d">
+            <Frame x:Name="Main" NavigationUIVisibility="Hidden"/>
+        </Grid>
+        
+    </Grid>
+</Window>

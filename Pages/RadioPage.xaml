@@ -1,0 +1,27 @@
+﻿<Page x:Class="MountainRadio.Pages.RadioPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MountainRadio.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="434" d:DesignWidth="600"
+      Title="RadioPage">
+
+    <Grid Background="#4f6a7d">
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Station Name:" VerticalAlignment="Top" Height="18" Width="85" Margin="10,10,0,0"/>
+        <TextBox x:Name="StationNameSearch" HorizontalAlignment="Left" Margin="100,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Search!" x:Name="btnSearchStation" Click="btnSearchStation_Click"  HorizontalAlignment="Left" Margin="235,10,0,0" VerticalAlignment="Top" Width="54"/>
+        
+        <TextBlock x:Name="StationName" HorizontalAlignment="Left" Margin="10,249,0,0" TextWrapping="Wrap" Text="Station name: " VerticalAlignment="Top" Width="472"/>
+        <TextBlock x:Name="StationCountry" HorizontalAlignment="Left" Margin="10,270,0,0" TextWrapping="Wrap" Text="Country: " VerticalAlignment="Top" Width="472"/>
+        
+        <Button x:Name="ResumeStopStation" Content="Play" Click="ResumeStopStation_Click" HorizontalAlignment="Left" Margin="235,321,0,0" VerticalAlignment="Top" Width="102"/>
+        
+        <Slider x:Name="VolumeSlider" Value="1" HorizontalAlignment="Left" Margin="226,360,0,0" VerticalAlignment="Top" Width="120"/>
+
+        <MediaElement x:Name="RadioStream" LoadedBehavior="Manual" UnloadedBehavior="Manual" HorizontalAlignment="Left" Height="30" Margin="337,10,0,0" VerticalAlignment="Top" Width="35"/>
+        <TextBlock HorizontalAlignment="Left" Margin="178,361,0,0" TextWrapping="Wrap" Text="Volume:" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>
